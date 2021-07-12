@@ -1,9 +1,8 @@
 {
-  "kind": "collectionType",
-  "collectionName": "categories",
+  "kind": "singleType",
+  "collectionName": "home_banners",
   "info": {
-    "name": "Category",
-    "description": ""
+    "name": "HomeBanner"
   },
   "options": {
     "increments": true,
@@ -12,32 +11,25 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
-      "type": "string",
-      "required": true
-    },
-    "HomeImage": {
+    "LargeBanner": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
         "images"
       ],
       "plugin": "upload",
-      "required": true,
+      "required": false,
       "pluginOptions": {}
     },
-    "PageBanner": {
-      "model": "file",
+    "SmallBanner": {
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images"
       ],
       "plugin": "upload",
-      "required": true,
+      "required": false,
       "pluginOptions": {}
-    },
-    "SubCategory": {
-      "type": "json"
     }
   }
 }
