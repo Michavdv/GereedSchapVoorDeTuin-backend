@@ -26,16 +26,6 @@
       "required": true,
       "pluginOptions": {}
     },
-    "PageBanner": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": true,
-      "pluginOptions": {}
-    },
     "SubCategory": {
       "type": "json"
     }
